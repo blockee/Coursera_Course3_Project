@@ -15,7 +15,7 @@ run_analysis.R requires the following unzipped files to be in your working direc
 "features.txt", "X_test.txt", "subject_test.txt", "Y_test.txt", "X_train.txt",
 "Y_train.txt", "subject_train.txt"
 
-run_analysis.R selects only the columns showing mean and standard deviation values for each data set. It then combines the train and test observations and adds the subject number and activity number as separate columns on the left-hand side. Then, a new summary data frame is created. This summary data contains the mean of each variable for each subject and activity.
+run_analysis.R selects only the columns showing mean and standard deviation values for each data set. meanFreq variables were excluded because they don't have a corresponding standard deviation. It then combines the train and test observations and adds the subject number and activity number as separate columns on the left-hand side. Then, a new summary data frame is created. This summary data contains the mean of each variable for each subject and activity.
 
 Finally, activities are given descriptive labels to replace numbers and variable names are cleaned up to remove capital letters and periods.
 
